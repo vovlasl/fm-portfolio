@@ -520,6 +520,28 @@ select {
     white-space: normal;
   }
 
+  .button-container {
+    transform: translateY(-31.5rem);
+    margin-bottom: -25rem;
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    justify-content: center;
+    gap: 3rem;
+    background-color: rgba(0, 0, 0, 0.64);
+    opacity: 0;
+  }
+
+  .button-container:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .button-container button {
+    margin-inline: auto;
+  }
+
+
   .contact-form {
     flex-direction: row;
     justify-content: space-between;
