@@ -260,12 +260,12 @@ select {
 
   .skills-container::after {
     width: 19rem;
-    top: 64rem;
+    top: 56rem;
   }
 
   .contact-form::after {
     width: 21rem;
-    top: 208rem;
+    top: 200rem;
   }
 }
 
@@ -597,6 +597,12 @@ select {
     content: url("./resources/images/image-profile-desktop.webp");
     width: 50rem;
     margin-right: 0;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    margin: 3.5rem 0 3.5rem 0;
   }
 
   h1 .line-break-tablet::after{
