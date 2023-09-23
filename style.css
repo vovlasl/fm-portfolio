@@ -185,9 +185,6 @@ select {
 }
 
 /* Decoration */
-.profile-pic::after {
-
-}
 
 .top-rings::before,
 .skills-container::after,
