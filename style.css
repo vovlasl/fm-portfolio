@@ -184,6 +184,32 @@ select {
   font-size: var(--fs-button); 
 }
 
+/* Decoration */
+
+.rings-deco {
+  position: absolute;
+  /* z-index: ; */
+}
+
+.top-rings {
+  left: -18.5rem;
+  top: 7.5rem;
+}
+
+
+.circle-deco {
+  position: absolute;
+  
+  right: 0;
+  top: 15.9rem;
+}
+
+/* .bottom-rings {
+  left: -18.5rem;
+  bottom: -175rem;
+
+} */
+
 /* Mobile */
 
 
@@ -250,7 +276,6 @@ select {
 .presentation {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
 }
 
 .profile-pic img{
@@ -598,5 +623,6 @@ hr {
   height: 1px;
   background-color: var(--clr-neutral-100);
 }
+
 
 
