@@ -185,30 +185,92 @@ select {
 }
 
 /* Decoration */
+.profile-pic::after {
 
-.rings-deco {
-  position: absolute;
-  /* z-index: ; */
 }
 
-.top-rings {
-  left: -18.5rem;
-  top: 7.5rem;
+.top-rings::before,
+.skills-container::after,
+.contact-form::after {
+  content: "";
+  position: absolute;
+  width: 12rem;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-image: url("./resources/images/pattern-rings.svg");
+  z-index: -1;
 }
 
-
-.circle-deco {
+.profile-pic::after {
+  content: "";
   position: absolute;
-  
+  width: 4rem;
+  aspect-ratio: 1/2;
+  background-repeat: no-repeat;
+  background-image: url("./resources/images/pattern-circle.svg");
+  background-position: left;
   right: 0;
-  top: 15.9rem;
+  top: 16rem;
 }
 
-/* .bottom-rings {
-  left: -18.5rem;
-  bottom: -175rem;
+.top-rings::before {
+  background-position: right;
+  top: 6rem;
+}
 
-} */
+.skills-container::after {
+  background-position: left;
+  top: 75.3rem;
+  right: 0;
+}
+
+.contact-form::after {
+  background-position: right;
+  top: 286rem;
+  left: 0;
+  z-index: 1;
+}
+
+@media (min-width: 47em) {
+  .profile-pic::after {
+    top: 27rem;
+  }
+
+  .top-rings::before {
+    width: 17rem;
+    top: 1rem;
+  }
+
+  .skills-container::after {
+    top: 60rem;
+  }
+
+  .contact-form::after {
+    top: 201rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .profile-pic::after {
+    width: 8.1rem;
+    right: 35.8%;
+  }
+
+  .top-rings::before {
+    width: 27rem;
+    top: -1.3rem;
+  }
+
+  .skills-container::after {
+    width: 19rem;
+    top: 64rem;
+  }
+
+  .contact-form::after {
+    width: 21rem;
+    top: 208rem;
+  }
+}
 
 /* Mobile */
 
@@ -511,7 +573,7 @@ select {
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 64em) {
   .width-margin,
   .contact-width-margin {
     --max-width: 69.375rem;
